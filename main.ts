@@ -1,0 +1,6 @@
+console.log("init start")
+tiles.loadMap(tiles.createMap(tilemap`レベル`))
+tiles.centerCameraOnTile(tiles.getTileLocation(0, 0))
+tiles.createSpritesOnTiles(assets.tile`myTile15`, SpriteKind.Player)
+console.log("init finish")
+music.play(music.createSoundEffect(WaveShape.Noise, 5000, 1, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Logarithmic), music.PlaybackMode.UntilDone)
